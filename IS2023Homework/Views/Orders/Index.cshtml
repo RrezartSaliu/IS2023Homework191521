@@ -1,0 +1,36 @@
+﻿@model IS2023Homework.Domain.DTO.OrdersDTO
+
+@if (Model.Orders.Count == 0)
+{
+	<h5>No Orders yet</h5>
+}
+else
+{
+	
+				var i = 1;
+				foreach (var item in Model.Orders)
+				{
+					<table class="table">
+			<tr>
+				<td>
+					@(i++)
+				</td>
+			</tr>
+					@{
+						foreach(var ticket in item.Tickets){
+							<tr>
+						<td>
+							@ticket.Ticket.Title
+						</td>
+						<td>
+							@ticket.Ticket.MovieCategory
+						</td>
+						<td>
+							@ticket.Ticket.Time
+						</td>
+					</tr>
+						}
+					}
+					</table>
+				}
+}

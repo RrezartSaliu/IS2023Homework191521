@@ -255,6 +255,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "FreeSpire.PDF": {
+              "target": "Package",
+              "version": "[8.6.0, )"
+            },
             "GemBox.Document": {
               "target": "Package",
               "version": "[35.0.1423, )"
@@ -286,6 +290,14 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Spire.Doc": {
+              "target": "Package",
+              "version": "[11.7.0, )"
+            },
+            "Spire.PDF": {
+              "target": "Package",
+              "version": "[9.7.0, )"
             }
           },
           "imports": [

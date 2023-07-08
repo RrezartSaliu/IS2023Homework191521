@@ -204,3 +204,5 @@ C:\Users\saliu\source\repos\IS2023Homework\IS2023Homework\bin\Debug\netcoreapp3.
 C:\Users\saliu\source\repos\IS2023Homework\IS2023Homework\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libSkiaSharp.dll
 C:\Users\saliu\source\repos\IS2023Homework\IS2023Homework\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\libSkiaSharp.dll
 C:\Users\saliu\source\repos\IS2023Homework\IS2023Homework\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
+C:\Users\saliu\source\repos\IS2023Homework\IS2023Homework\bin\Debug\netcoreapp3.1\Spire.Doc.dll
+C:\Users\saliu\source\repos\IS2023Homework\IS2023Homework\bin\Debug\netcoreapp3.1\Spire.Pdf.dll

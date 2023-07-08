@@ -7,7 +7,10 @@ using Newtonsoft.Json;
 using System.Net.Http;
 using System.Text;
 using IS2023Homework.Domain.Domain.Models;
+using Spire.Doc;
+using Spire.Pdf;
 using System.IO;
+using System.Linq;
 
 namespace IS2023Homework.Controllers
 {
@@ -26,23 +29,37 @@ namespace IS2023Homework.Controllers
             return View(model);
         }
        
-        public IActionResult SavePDF(int id) {
-            /*
-            HttpClient client = new HttpClient();
-            string URL = "https://localhost:44315/Orders";
+        public IActionResult SavePDF(int orderId) {
+            var wordFilePath = "OrderWord.docx";
+            var pdfFileName = "Order.pdf";
 
-			var model = new
+            var document = new Document();
+            document.LoadFromFile(wordFilePath);
+            var usernameNameAndSurname = _orderService.GetOrdersForUser(User.FindFirstValue(ClaimTypes.NameIdentifier)).Orders.Where(z=>z.Id==orderId).FirstOrDefault();
+
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (var ticket in usernameNameAndSurname.Tickets)
             {
-                id = id
-            };
-			HttpContent content = new StringContent(JsonConvert.SerializeObject(model), Encoding.UTF8, "application/json");
-            HttpResponseMessage httpResponseMessage = client.PostAsync(URL, content).Result;
-            var result = httpResponseMessage.Content.ReadAAsync().Result;
-            var templatePath = Path.Combine(Directory.GetCurrentDirectory(), "OrderWord.docx");
-            var document = DocumentModel.Load(templatePath);
-            document.Content.Replace("{{OrderNumber}}"),result.Id.
-            */
-            return null;
+                stringBuilder.Append(ticket.Ticket.Title);
+                stringBuilder.Append(", ");
+            }
+            stringBuilder.Remove(stringBuilder.Length - 2, 1);
+
+			document.Replace("{{OrderNumber}}", usernameNameAndSurname.Id.ToString(), false, true);
+            document.Replace("{{UserName}}", usernameNameAndSurname.OrderedBy.Name + " " + usernameNameAndSurname.OrderedBy.Surname, false, true);
+            document.Replace("{{TicketList}}", stringBuilder.ToString(), false, true);
+
+			var pdfStream = new System.IO.MemoryStream();
+			document.SaveToStream(pdfStream, Spire.Doc.FileFormat.PDF);
+
+			// Set the position to the beginning of the stream
+			pdfStream.Position = 0;
+
+			// Set the content type to application/pdf
+			var contentType = "application/pdf";
+
+			// Return the file as a FileStreamResult
+			return File(pdfStream, contentType, pdfFileName);
 		}
     }
 }

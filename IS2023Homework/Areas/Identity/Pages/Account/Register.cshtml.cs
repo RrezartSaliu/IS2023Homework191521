@@ -86,7 +86,7 @@ namespace IS2023Homework.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new ShopApplicationUser { UserName = Input.Email, Email = Input.Email , Name = Input.Name, Surname = Input.Surname, Address = Input.Address , UserShoppingCart = new ShoppingCart() };
+                var user = new ShopApplicationUser { UserName = Input.Email, Email = Input.Email , Name = Input.Name, Surname = Input.Surname, Address = Input.Address , UserShoppingCart = new ShoppingCart() , Role="Standard"};
                 user.UserShoppingCart.ApplicationUserId = user.Id;
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)

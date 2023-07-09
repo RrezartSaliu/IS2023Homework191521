@@ -10,5 +10,6 @@ namespace IS2023Homework.Domain.Identity
         public string Surname { get; set; }
         public string Address { get; set; }
         public virtual ShoppingCart UserShoppingCart { get; set; }
+        public string Role { get; set; }
     }
 }

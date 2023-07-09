@@ -9,6 +9,7 @@ namespace IS2023Homework.Service.Interface
     public interface ITicketService
     {
         List<Ticket> GetAllTickets();
+        List<Ticket> GetTicketsByCategory(string categoryName);
         Ticket GetDetailsForTicket (int ticketId);
         void CreateNewTicket(Ticket ticket);
         void UpdateExistingTicket(Ticket ticket);

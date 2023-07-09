@@ -5,10 +5,33 @@
 }
 
 <div class="container">
-<div class="row">
-    <a class="btn btn-success" asp-action="Create">Insert New Ticket</a>
+    <div class="row">
+        @{
+            if (ViewBag.UserRole == "Admin")
+            {
+                <a class="btn btn-success" asp-action="Create">Insert New Ticket</a>
+            }
+        }
     <a class="btn btn-warning" href="/Tickets?ascending=true">Filter by closest date</a>
     <a class="btn btn-warning" href="/Tickets?descending=true">Filter by farthest date</a>
+
+    @{
+            if (ViewBag.UserRole == "Admin")
+            {
+                <a class="btn btn-primary" href="/Tickets/ExportToExcel">Export to Excel</a>
+                <form method="get" action="/Tickets/ExportToExcel">
+                    <select class="custom-select-sm" name="category">
+                        <option value="BIOGRAPHICAL">Biographical</option>
+                        <option value="COMEDY">Comedy</option>
+                        <option value="ACTION">Action</option>
+                        <option value="DRAMA">Drama</option>
+                        <option value="SCIENCE_FICTION">Science Fiction</option>
+                    </select>
+                    <input class="btn btn-primary" type="submit" value="Export to excel by category">
+                </form>
+            }
+        }
+
 </div>
 @for (int i=0; i< Model.Count; i++) {
         var item = Model[i];

@@ -71,6 +71,11 @@ namespace IS2023Homework.Service.Implementation
             throw new NotImplementedException();
         }
 
+        public List<Ticket> GetTicketsByCategory(string categoryName)
+        {
+            return _ticketRepository.GetAll().ToList().Where(z=>z.MovieCategory.ToString().Equals(categoryName)).ToList();
+        }
+
         public void UpdateExistingTicket(Ticket ticket)
         {
             _ticketRepository.Update(ticket);

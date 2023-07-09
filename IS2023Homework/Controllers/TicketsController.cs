@@ -10,20 +10,35 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using IS2023Homework.Service.Interface;
 using IS2023Homework.Domain.DTO;
 using IS2023Homework.Domain.Domain.Models;
+using IS2023Homework.Domain.Identity;
+using Microsoft.AspNetCore.Identity;
+using System.Security.Cryptography.X509Certificates;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
+using OfficeOpenXml;
+using System.Reflection;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace IS2023Homework.Controllers
 {
     public class TicketsController : Controller
     {
         private readonly ITicketService _ticketService;
-        public TicketsController(ITicketService ticketService)
+        private readonly UserManager<ShopApplicationUser> _userManager;
+        public TicketsController(ITicketService ticketService, UserManager<ShopApplicationUser> userManager)
         {
             _ticketService = ticketService;
+            _userManager = userManager;
+
         }
 
         // GET: Tickets
         public async Task<IActionResult> Index(bool? ascending, bool? descending)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                var currentRole = _userManager.GetUserAsync(HttpContext.User).Result.Role;
+                ViewBag.UserRole = currentRole;
+            }
             var model = _ticketService.GetAllTickets();
             if (ascending == true)
             {
@@ -60,6 +75,7 @@ namespace IS2023Homework.Controllers
         // GET: Tickets/Details/5
         public async Task<IActionResult> Details(int? id)
         {
+            var currentRole = _userManager.GetUserAsync(HttpContext.User).Result.Role;
             if (id == null)
             {
                 return NotFound();
@@ -70,6 +86,7 @@ namespace IS2023Homework.Controllers
             {
                 return NotFound();
             }
+            ViewBag.UserRole= currentRole;
 
             return View(ticket);
         }
@@ -174,6 +191,53 @@ namespace IS2023Homework.Controllers
         private bool TicketExists(int id)
         {
             return _ticketService.GetDetailsForTicket(id)!=null;    
+        }
+        public IActionResult ExportToExcel(string? category)
+        {
+           
+                // Retrieve the data from your data source
+                List<Ticket> data = _ticketService.GetAllTickets();
+            if (category != null)
+            {
+                data = data.Where(z=>z.MovieCategory.ToString().Equals(category)).ToList();
+            }
+
+            // Create the Excel package
+            using (var package = new ExcelPackage())
+            {
+                // Create a worksheet
+                var worksheet = package.Workbook.Worksheets.Add("Sheet1");
+
+                // Write the header row
+                worksheet.Cells[1, 1].Value = "Title";
+                worksheet.Cells[1, 2].Value = "MovieCategory";
+                worksheet.Cells[1, 3].Value = "Price";
+                worksheet.Cells[1, 4].Value = "Time";
+
+                // Populate the worksheet with data
+                for (int row = 0; row < data.Count; row++)
+                {
+                    // Get the data for the current row
+                    var rowData = new object[]
+                    {
+                data[row].Title,
+                data[row].MovieCategory,
+                data[row].Price,
+                data[row].Time.ToString("yyyy-MM-dd HH:mm:ss") // Format DateTime attribute as normal date
+                    };
+
+                    // Write the row data to the worksheet
+                    worksheet.Cells[row + 2, 1].LoadFromArrays(new[] { rowData });
+                }
+
+                // Prepare the response
+                var content = package.GetAsByteArray();
+                var contentType = "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet";
+                var fileName = "export.xlsx";
+
+                // Return the Excel file as the response
+                return File(content, contentType, fileName);
+            }
         }
     }
 }

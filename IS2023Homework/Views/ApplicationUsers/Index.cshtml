@@ -1,0 +1,68 @@
+﻿@model List<ShopApplicationUser>
+@using IS2023Homework.Domain.Identity
+<table class="table">
+	<form method="post" enctype="multipart/form-data" action="/ApplicationUsers/UploadExcel">
+		<input type="file" name="file" />
+		<input type="submit" value="Upload" />
+	</form>
+
+	<thead>
+		<tr>
+			<th class="col-md-1">
+				#
+			</th>
+			<th class="col">
+				Name
+			</th>
+			<th class="col">
+				Surname
+			</th>
+			<th class="col">
+				Email
+			</th>
+			<th>
+				Role
+			</th>
+			<th>
+
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@{
+			var i = 1;
+			foreach (var item in Model)
+			{
+				<tr>
+					<td>
+						@(i++)
+					</td>
+					<td>
+						@item.Name
+					</td>
+					<td>
+						@item.Surname
+					</td>
+					<td>
+						@item.Email
+					</td>
+					<td>
+						@item.Role
+					</td>
+					<td>
+						@{
+							if (item.Role == "Admin")
+							{
+								<a class="btn btn-danger" href="/ApplicationUsers/RemoveAdmin/@item.Id">Remove Admin</a>
+							}
+							else
+							{
+								<a class="btn btn-success" href="/ApplicationUsers/MakeAdmin/@item.Id">Make Admin</a>
+							}
+						}
+					</td>
+				</tr>
+			}
+		}
+	</tbody>
+</table>

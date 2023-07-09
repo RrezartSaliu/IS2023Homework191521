@@ -28,3 +28,13 @@ C:\Users\saliu\Downloads\IS2023Homework191521-main(1)\IS2023Homework.Domain\obj\
 C:\Users\saliu\Downloads\IS2023Homework191521-main(1)\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.csproj.CoreCompileInputs.cache
 C:\Users\saliu\Downloads\IS2023Homework191521-main(1)\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.dll
 C:\Users\saliu\Downloads\IS2023Homework191521-main(1)\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.pdb
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\bin\Debug\netcoreapp3.1\IS2023Homework.Domain.deps.json
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\bin\Debug\netcoreapp3.1\IS2023Homework.Domain.dll
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\bin\Debug\netcoreapp3.1\IS2023Homework.Domain.pdb
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.csproj.AssemblyReference.cache
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.AssemblyInfoInputs.cache
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.AssemblyInfo.cs
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.csproj.CoreCompileInputs.cache
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.dll
+C:\Users\saliu\Downloads\IS2023Homework191521-main (2)\IS2023Homework191521-main\IS2023Homework.Domain\obj\Debug\netcoreapp3.1\IS2023Homework.Domain.pdb

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework\\IS2023Homework.csproj": {}
+    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework\\IS2023Homework.csproj": {}
   },
   "projects": {
-    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj": {
+    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj",
         "projectName": "IS2023Homework.Domain",
-        "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj",
+        "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj",
         "packagesPath": "C:\\Users\\saliu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Domain\\obj\\",
+        "outputPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -78,14 +78,14 @@
         }
       }
     },
-    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj": {
+    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj",
         "projectName": "IS2023Homework.Repository",
-        "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj",
+        "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj",
         "packagesPath": "C:\\Users\\saliu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Repository\\obj\\",
+        "outputPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -107,8 +107,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj": {
-                "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj"
+              "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj": {
+                "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj"
               }
             }
           }
@@ -142,14 +142,14 @@
         }
       }
     },
-    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Service\\IS2023Homework.Service.csproj": {
+    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Service\\IS2023Homework.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Service\\IS2023Homework.Service.csproj",
+        "projectUniqueName": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Service\\IS2023Homework.Service.csproj",
         "projectName": "IS2023Homework.Service",
-        "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Service\\IS2023Homework.Service.csproj",
+        "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Service\\IS2023Homework.Service.csproj",
         "packagesPath": "C:\\Users\\saliu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Service\\obj\\",
+        "outputPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -171,11 +171,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj": {
-                "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj"
+              "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj": {
+                "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Domain\\IS2023Homework.Domain.csproj"
               },
-              "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj": {
-                "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj"
+              "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj": {
+                "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Repository\\IS2023Homework.Repository.csproj"
               }
             }
           }
@@ -209,14 +209,14 @@
         }
       }
     },
-    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework\\IS2023Homework.csproj": {
+    "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework\\IS2023Homework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework\\IS2023Homework.csproj",
+        "projectUniqueName": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework\\IS2023Homework.csproj",
         "projectName": "IS2023Homework",
-        "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework\\IS2023Homework.csproj",
+        "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework\\IS2023Homework.csproj",
         "packagesPath": "C:\\Users\\saliu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework\\obj\\",
+        "outputPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -239,8 +239,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Service\\IS2023Homework.Service.csproj": {
-                "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main(1)\\IS2023Homework.Service\\IS2023Homework.Service.csproj"
+              "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Service\\IS2023Homework.Service.csproj": {
+                "projectPath": "C:\\Users\\saliu\\Downloads\\IS2023Homework191521-main (2)\\IS2023Homework191521-main\\IS2023Homework.Service\\IS2023Homework.Service.csproj"
               }
             }
           }

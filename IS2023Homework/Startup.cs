@@ -45,6 +45,7 @@ namespace IS2023Homework
             services.AddTransient<ITicketService,TicketService>();
             services.AddTransient<IShoppingCartService,ShoppingCartService>();
             services.AddTransient<IOrderService,OrderService>();
+            services.AddTransient<IApplicationUserService,ApplicationUserService>();
             services.AddControllersWithViews();
             services.AddRazorPages();
             services.AddControllers().AddNewtonsoftJson(x =>
